@@ -1,0 +1,32 @@
+<?php
+
+$path = $_SERVER["SERVER_NAME"];
+if($path == "haploid.nl") {
+	$path .= "/sc2/";
+} else {
+	$path .= "/";
+}
+$path = "http://". $path;
+
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1" xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
+	<url>
+		<loc><?php echo $path; ?>faq.php</loc>
+	</url>
+	<url>
+		<loc><?php echo $path; ?>build_order/</loc>
+	</url>
+	<url>
+		<loc><?php echo $path; ?>build_order/syntax.php</loc>
+	</url>
+	<url>
+		<loc><?php echo $path; ?>unit_production/protoss.php</loc>
+	</url>
+	<url>
+		<loc><?php echo $path; ?>unit_production/terran.php</loc>
+	</url>
+	<url>
+		<loc><?php echo $path; ?>unit_production/zerg.php</loc>
+	</url>
+</urlset>

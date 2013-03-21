@@ -1,0 +1,321 @@
+/* Algemein */
+html {
+	background: black url(http://image.sc2calc.org/background.png) center repeat-y;
+	height: 100%;
+	padding: 0;
+}
+p, dl, h1, h2, h3, table.p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+p, code.p, table.p {
+	border-spacing: 0px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+table.p td {
+	padding: 0px;
+}
+body {
+	background: white;
+	margin: auto;
+	max-width: 800px;
+	min-height: 100%;
+	padding: 0px;
+	position: relative;
+}
+body, textarea {
+	font: 11pt "Trebuchet MS", serif;
+}
+a {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+em {
+	color: blue;
+	font-style: normal;
+}
+h2 {
+	border-left: 5px solid chocolate;
+	font-size: 1.2em;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 8px;
+}
+dl {
+	background: beige;
+	border: 1px solid chocolate;
+	font: 10pt Tahoma, Arial, sans-serif;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 8px;
+	padding: 4px 12px;
+}
+input {
+	text-align: center;
+}
+input[readonly] {
+	background: white;
+	border: 2px solid white;
+}
+li {
+	list-style: square;
+}
+textarea {
+	outline: none;
+}
+th {
+	text-align: left;
+}
+
+/* Menu */
+a.banner {
+	background: url(http://image.sc2calc.org/banner.png);
+	border-bottom: 1px solid grey;
+	display: block;
+	height: 100px;
+	margin: 0px;
+}
+a.banner h1 {
+	color: gold;
+	display: inline;
+	font-weight: normal;
+	left: 130px;
+	margin: 0px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+	top: 50px;
+}
+div.menu {
+	background: gainsboro;
+	border-bottom: 1px solid grey;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+table#menu {
+	border-collapse: collapse;
+	height: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 760px;
+}
+table#menu td {
+	padding: 0px;
+	text-align: left;
+	vertical-align: middle;
+}
+table#menu .unfold {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+table#menu td a {
+	color: black;
+}
+table#menu td a:hover {
+	color: blue;
+}
+table#menu td a.race {
+	padding-left: 15px;
+}
+table#menu td a img {
+	vertical-align: middle;
+}
+
+/* Footer */
+div.footer {
+	background: gainsboro;
+	border-top: 1px solid grey;
+	bottom: 0px;
+	font: 10pt "Trebuchet MS", serif;
+	position: absolute;
+	width: 100%;
+}
+div.footer ul {
+	margin-bottom: 4px;
+	margin-left: 20px;
+	margin-top: 4px;
+	padding: 0px;
+}
+div.footer li {
+	display: inline;
+	list-style: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div.footer ul.copyleft {
+	float: right;
+	margin-right: 20px;
+}
+div.footer a {
+	color: black;
+}
+div.footer a:hover {
+	color: blue;
+}
+
+/* Income */
+#bases th {
+	width: 150px;
+}
+.warnings {
+	color: red;
+}
+
+
+/* Resource consumption */
+#warnings {
+	color: red;
+}
+em.transform {
+	cursor: pointer;
+}
+li em {
+	cursor: pointer;
+}
+td.center, th.center {
+	text-align: center;
+}
+td.right, th.right {
+	text-align: right;
+}
+
+/* Tooltip */
+.tooltip {
+	background: black;
+	border: 1px groove;
+	color: white;
+	display: none;
+	font: 9pt Tahoma, Arial, sans-serif;
+	opacity: 0.9;
+	position: fixed;
+}
+.tooltip .title {
+	background: darkslategray;
+	color: powderblue;
+	font-size: 1.1em;
+	padding: 2px 5px;
+}
+.tooltip td {
+	padding: 0px 4px;
+}
+
+/* Collapsible fieldset */
+fieldset {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 4px;
+}
+fieldset.collapsed {
+	height: 1.5em;
+}
+fieldset.collapsed .collapsible {
+	display: none;
+}
+legend {
+	background: url(http://image.sc2calc.org/collapse.gif) no-repeat scroll 12px transparent;
+	/*color: blue;*/
+	cursor: pointer;
+	margin-left: 10px;
+	padding-left: 30px;
+	padding-right: 6px;
+}
+fieldset.collapsed legend {
+	background-image: url(http://image.sc2calc.org/expand.gif);
+}
+fieldset.collapsed small.close {
+	display: none;
+}
+fieldset small.open {
+	display: none;
+}
+fieldset.collapsed small.open {
+	display: inline;
+}
+
+/* Build order */
+#buildOrder {
+	display: block;
+	height: auto;
+	overflow: hidden;
+	resize: none;
+	width: 746px;
+}
+a.reminder {
+	color: blue;
+	float: right;
+	font-size: 10pt;
+	padding-right: 10px;
+}
+.error {
+	color: crimson;
+}
+span.strict {
+	float: right;
+	padding-right: 10px;
+}
+
+/* Code examples */
+code, textarea.code {
+	background: gainsboro;
+	color: black;
+	display: block;
+	font: 10pt Tahoma, Arial, sans-serif;
+}
+code.p, textarea.code {
+	border: 1px solid slategray;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 8px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+table.code {
+	margin-left: 20px;
+}
+table.code tr {
+	vertical-align: middle;
+}
+table.code tr td {
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-top: 2px;
+}
+table.code tr td:first-child {
+	background: gainsboro;
+	border-bottom: 1px dashed slategray;
+	border-left: 1px solid slategray;
+	border-right: 1px solid slategray;
+	width: 300px;
+}
+table.code tr.first td {
+	padding-top: 6px;
+}
+table.code tr.first td:first-child {
+	border-top: 1px solid slategray;
+}
+table.code tr.last td {
+	padding-bottom: 6px;
+}
+table.code tr.last td:first-child {
+	border-bottom: 1px solid slategray;
+}
+span.or {
+	color: slategray;
+	left: 250px;
+	font-variant: small-caps;
+	position: absolute;
+}
